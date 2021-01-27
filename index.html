@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
     <style>
     h1{
-        color:#525353;
-        padding-left: 112px;
+        color:#787878;
+        padding-left: 260px;
+        font-family: 'Nunito';
     }
     h3{
-        color: #b7b5b5;
-        padding-left: 112px;
+        color: #B7B7B7;
+        padding-left: 260px;
         padding-top: 0;
+        font-family: 'Nunito';
     }
 
 
     table {
         border-collapse: separate;
         border-spacing:0 25px;
-        background-color: ghostwhite;
-        padding-top: 25pxpx;
+        background-color: white;
+        padding-top: 25px;
         padding-bottom: 50px;
         /*align-content: center;*/
         width: 75%;
@@ -32,18 +36,18 @@
     td{
         border-collapse: collapse;
         padding-left: 25px;
+        padding-right: 15px;
         padding-top: 8px;
         padding-bottom: 8px;
         margin: 5px;
     }
-    td:first-child {
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
+    td.round {
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
     }
     td:last-child{
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
     th{
         text-align: start;
@@ -78,7 +82,21 @@
     color: #525353;
     border-radius: 8px;
 }
-
+td.icon{
+    background-color: white;
+}
+td.check{
+    color: #00AE86;
+    font-size: 25px;
+}
+td.minus{
+    color: #FACA0C;
+    font-size: 25px
+}
+td.times{
+    color: #EF3E4A;
+    font-size: 25px
+}
 
     </style>
 </head>
@@ -88,32 +106,38 @@
 <div>
 <table class="center">
     <tr id="head">
+        <th></th>
         <th>Name</th>
         <th>Email</th>
         <th>SMS</th>
     </tr>
     <tr id="derek">
-        <td>Derek Jones</td>
+        <td class="icon check"><i class="far fa-check-square"></i></td>
+        <td class="round">Derek Jones</td>
         <td>djones@email.com</td>
         <td>+15556878989</td>
     </tr>
     <tr id="john">
-        <td>John Winchester</td>
+        <td class="icon check"><i class="far fa-check-square"></td>
+        <td class="round">John Winchester</td>
         <td>johnw22@hotmail.com</td>
         <td>+15557764532</td>
     </tr>
     <tr id="sarah">
-        <td>Sarah Kanter</td>
+        <td class="icon minus"><i class="far fa-minus-square"></i></td>
+        <td class="round">Sarah Kanter</td>
         <td>hello@sarahkr.org</td>
         <td>+15554438866</td>
     </tr>
     <tr id="peter">
-        <td>Peter Howard</td>
+        <td class="icon check"><i class="far fa-check-square"></i></td>
+        <td class="round">Peter Howard</td>
         <td>phoward@protonmail.com</td>
         <td>+15551225641</td>
     </tr>
     <tr id="amanda">
-        <td>Amanda Thompson</td>
+        <td class="icon times"><i class="fas fa-times"></i></td>
+        <td class="round">Amanda Thompson</td>
         <td>amandatom@email.com</td>
         <td>+15553343330</td>
     </tr>
